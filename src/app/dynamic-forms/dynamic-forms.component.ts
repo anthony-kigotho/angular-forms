@@ -20,12 +20,6 @@ export class ProfileEditorComponent {
     this.profileForm = this.formBuilder.group({
       firstName: [''],
       lastName: [''],
-      address: this.formBuilder.group({
-        street: [''],
-        city: [''],
-        state: [''],
-        zip: ['']
-      }),
       favoriteBooks: this.formBuilder.array([this.formBuilder.control('')])
     });
   }
