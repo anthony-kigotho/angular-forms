@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-template-driven-form',
+  selector: 'app-template-favorite-color',
   standalone: true,
-  imports: [],
-  templateUrl: './template-driven-form.component.html',
-  styleUrl: './template-driven-form.component.css'
+  imports: [FormsModule],
+  template: `
+    Favorite Color: <input type="text" [(ngModel)]="favoriteColor">
+  `,
 })
-export class TemplateDrivenFormComponent {
-
+export class FavoriteColorComponent {
+  favoriteColor = '';
 }
