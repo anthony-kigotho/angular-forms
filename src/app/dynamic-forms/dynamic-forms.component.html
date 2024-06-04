@@ -18,6 +18,7 @@
           Book {{ i + 1 }}:
           <input type="text" [formControlName]="i">
         </label>
+        <button (click)="removeBook(i)">Delete book </button>
       </div>
     </div>
   

@@ -34,6 +34,10 @@ export class ProfileEditorComponent {
     this.favoriteBooks.push(this.formBuilder.control(''));
   }
 
+  removeBook(index: number) {
+    this.favoriteBooks.removeAt(index)
+  }
+
   // Method to submit form data
   onSubmit() {
     console.log(this.profileForm.value);
